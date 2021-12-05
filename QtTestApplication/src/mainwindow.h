@@ -2,11 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPainter>
-#include <QtDebug>
-#include <QColor>
-
-#include <qrencode.h>
 
 namespace Ui {
 class MainWindow;
@@ -19,9 +14,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
-protected:
-    void paintEvent(QPaintEvent *pEventPainter);
 
 private:
     Ui::MainWindow *ui;
